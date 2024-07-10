@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #003041;
+    --middle-color: aliceblue;
+    --secondary-color: #457187;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {}
+
+/*navbar start*/
+.navbar {
+
+    background-color: rgba(255, 255, 255, 0.257);
+}
+
+.navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+@media (max-width:350px){
+    .navbar .navbar-brand {
+        font-weight: 700;
+        font-size: 30px;
+        color: var(--primary-color);
+    }
+}
+
+.navbar .navbar-brand:hover {
+    color: var(--primary-color);
+}
+
+.nav-item .nav-link {
+    transition: 0.8s ease;
+    border-radius: 5px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 20px 0px;
+}
+
+.nav-item .nav-link:hover {
+    background-color: var(--primary-color);
+    color: var(--middle-color);
+}
+
+.navbar button {
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    color: var(--middle-color);
+}
+
+
+
+/*navbar End*/
+
+/*back start*/
+.backimg {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../assets/image/sky1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    ba
+}
+
+.backimg .content {
+    
+    padding-top: 200px;
+}
+
+.backimg .content h2 {
+    color: var(--secondary-color);
+    font-size: 50px;
+}
+
+@media (max-width:1060px){
+    .backimg .content h2{
+        color: var(--secondary-color);
+        font-size: 35px;
+    }
+}
+
+
+.backimg .content h1 {
+    color: var(--secondary-color);
+    font-size: 100px;
+}
+@media (max-width:1060px){
+    .backimg .content h1{
+        color: var(--secondary-color);
+        font-size: 60px;
+    }
+}
+.changecontent::after {
+    content: ' ';
+    color: var(--primary-color);
+    animation: changetext 10s infinite linear;
+    font-size: 60px;
+}
+
+@media (max-width:1060px){
+    .changecontent::after {
+        content: ' ';
+        color: var(--primary-color);
+        animation: changetext 10s infinite linear;
+        font-size: 30px;
+    }
+}
+
+@keyframes changetext {
+    0% {
+        content: "France";
+    }
+
+    10% {
+        content: "Itlay";
+    }
+
+    20% {
+        content: "Dubai";
+    }
+
+    30% {
+        content: "Chaina";
+    }
+
+    40% {
+        content: "Europ";
+    }
+
+    50% {
+        content: "Spain";
+    }
+
+    60% {
+        content: "Canada";
+    }
+
+    70% {
+        content: "Saudia Arab";
+    }
+
+    80% {
+        content: "England";
+    }
+
+    90% {
+        content: "Turkey";
+    }
+
+    100% {
+        content: "Japan";
+    }
+}
+
+.backimg .content p {
+    color: var(--secondary-color);
+    font-size: 15PX;
+    font-weight: 500;
+}
+
+.backimg .content .mbtn {
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.backimg img {
+    padding-top: 200px;
+}
+
+
+
+/*back end*/
+
+/*About start*/
+.about h1 {
+    font-size: 60px;
+    color: var(--primary-color);
+}
+
+.about p {
+    color: var(--primary-color);
+}
+
+.about img {}
+
+@media (max-width: 767px){
+    .about img{
+        padding: 200px 0;
+    }
+}
+
+.about{
+    padding: 100px 0;
+    display: flex;
+}
+
+@media (max-width: 770px){
+    .about{
+        padding: 200px 0;
+        align-items:center;
+    }
+}
+
+/*About end*/
